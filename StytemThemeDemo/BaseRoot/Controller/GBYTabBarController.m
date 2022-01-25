@@ -49,7 +49,7 @@
                 barAppearance.backgroundColor = UIRGBColor(40, 40, 40);
             }
             self.tabBar.scrollEdgeAppearance = barAppearance;
-            self.tabBar.standardAppearance = barAppearance; // 与nav同理
+            self.tabBar.standardAppearance = barAppearance;
         });
 //        barAppearance.lee_theme
 //        .leeAddBackgroundColor(DAY, UIColorFromRGB(0xf5f5f5))

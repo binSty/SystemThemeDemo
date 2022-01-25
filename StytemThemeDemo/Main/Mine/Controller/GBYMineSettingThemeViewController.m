@@ -107,11 +107,15 @@ static NSString *const mineSettingThemeTableViewCellID = @"mineSettingThemeTable
             if (indexPath.row == 1) {
                 self.currentIndex = 1;
                 cell.selectThemeImage.image = [UIImage imageNamed:@"selectTheme"];
+            } else {
+                cell.selectThemeImage.image = [UIImage imageNamed:@""];
             }
         } else {
             if (indexPath.row == 0) {
                 self.currentIndex = 0;
                 cell.selectThemeImage.image = [UIImage imageNamed:@"selectTheme"];
+            } else {
+                cell.selectThemeImage.image = [UIImage imageNamed:@""];
             }
         }
         cell.lee_theme
@@ -160,8 +164,6 @@ static NSString *const mineSettingThemeTableViewCellID = @"mineSettingThemeTable
     if (indexPath.section == 1) {
         [self _setThemeColorConfig:indexPath.row];
     }
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ThemeChangeNotification" object:nil];
-    [self.navigationView setNeedsLayout];
 }
 
 - (void)_setSwtichStateConfig:(BOOL)state {
@@ -181,6 +183,9 @@ static NSString *const mineSettingThemeTableViewCellID = @"mineSettingThemeTable
     } else {
         /// 设置不跟随系统，亮色和深色的本地需要判断一下
         setSystemSwitchState(NO);
+        setDarkThemeState(NO);
+        setLightThemeState(YES);
+        [ThemeColorManager startTheme:DAY];
         self.mineTabDataArray = @[@[@"跟随系统"], @[@"普通模式", @"深色模式"]];
     }
     
@@ -211,6 +216,7 @@ static NSString *const mineSettingThemeTableViewCellID = @"mineSettingThemeTable
     } else {
         [ThemeColorManager startTheme:DAY];
     }
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"settingThemeChangeNotice" object:nil userInfo:@{@"setState": @"0"}];
 }
 
 #pragma mark

@@ -80,6 +80,9 @@ static NSString *const mineSettingTableViewCellID = @"mineSettingTableViewCellID
     cell.textLabel.lee_theme
     .LeeAddTextColor(DAY, [UIColor blackColor])
     .LeeAddTextColor(NIGHT, [UIColor whiteColor]);
+    cell.detailTextLabel.lee_theme
+    .LeeAddTextColor(DAY, UIColorFromRGB(0x656565))
+    .LeeAddTextColor(NIGHT, UIRGBColor(137, 136, 141));
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     self.stateCell = cell;
     return cell;
