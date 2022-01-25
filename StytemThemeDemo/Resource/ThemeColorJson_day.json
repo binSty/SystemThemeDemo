@@ -1,0 +1,17 @@
+{
+    "color": {
+            "navigation_bg_color" : "#ffffff",
+            "navigation_bgDivider_color" : "#f5f5f5",
+            "tabBar_bg_color" : "#f5f5f5",
+            "tabBar_bgDivider_color" : "#eeeeee",
+            "viewController_bg_color" : "#ffffff"
+            },
+    
+    "image": {
+        "navigationBackImg" : "navBackBtnBlack.png",
+    },
+    
+    "other": {
+
+    }
+}

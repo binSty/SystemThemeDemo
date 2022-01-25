@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ED1CD9EDDAE06D69873AB27 /* libPods-StytemThemeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D710DCEA96A847FE21360BE7 /* libPods-StytemThemeDemo.a */; };
+		C10E3A95279F847000925B56 /* ThemeColorJson_day.json in Resources */ = {isa = PBXBuildFile; fileRef = C10E3A94279F847000925B56 /* ThemeColorJson_day.json */; };
+		C10E3A97279F847C00925B56 /* ThemeColorJson_night.json in Resources */ = {isa = PBXBuildFile; fileRef = C10E3A96279F847C00925B56 /* ThemeColorJson_night.json */; };
+		C10E3A9B279F87BB00925B56 /* ThemeColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C10E3A9A279F87BB00925B56 /* ThemeColorManager.m */; };
+		C10E3AA0279F966E00925B56 /* ThemeConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C10E3A9F279F966E00925B56 /* ThemeConfigModel.m */; };
+		C10E3AA3279F9A9E00925B56 /* UIColor+ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C10E3AA2279F9A9E00925B56 /* UIColor+ThemeColor.m */; };
+		C1DFB10027992B1A00144EEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB0FF27992B1A00144EEB /* AppDelegate.m */; };
+		C1DFB10B27992B1E00144EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DFB10A27992B1E00144EEB /* Assets.xcassets */; };
+		C1DFB10E27992B1E00144EEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DFB10C27992B1E00144EEB /* LaunchScreen.storyboard */; };
+		C1DFB11127992B1E00144EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB11027992B1E00144EEB /* main.m */; };
+		C1DFB11B27992B1E00144EEB /* StytemThemeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB11A27992B1E00144EEB /* StytemThemeDemoTests.m */; };
+		C1DFB12527992B1E00144EEB /* StytemThemeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB12427992B1E00144EEB /* StytemThemeDemoUITests.m */; };
+		C1DFB12727992B1E00144EEB /* StytemThemeDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB12627992B1E00144EEB /* StytemThemeDemoUITestsLaunchTests.m */; };
+		C1DFB13B27992C9A00144EEB /* GBYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB13A27992C9A00144EEB /* GBYBaseViewController.m */; };
+		C1DFB13E27992CA900144EEB /* GBYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB13D27992CA900144EEB /* GBYTabBarController.m */; };
+		C1DFB14127992CB600144EEB /* GBYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB14027992CB600144EEB /* GBYNavigationController.m */; };
+		C1DFB14827992D0E00144EEB /* GBYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB14727992D0E00144EEB /* GBYHomeViewController.m */; };
+		C1DFB14C27992D2200144EEB /* GBYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB14B27992D2200144EEB /* GBYMineViewController.m */; };
+		C1DFB1512799316A00144EEB /* UIColor+Dark.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB1502799316A00144EEB /* UIColor+Dark.m */; };
+		C1DFB1562799350000144EEB /* GBYNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB1552799350000144EEB /* GBYNavigationView.m */; };
+		C1DFB15B279935FA00144EEB /* GBYTouchPointButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB15A279935FA00144EEB /* GBYTouchPointButton.m */; };
+		C1DFB15E279A40BB00144EEB /* GBYHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB15D279A40BB00144EEB /* GBYHomeDetailViewController.m */; };
+		C1DFB164279A40E700144EEB /* GBYMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB163279A40E700144EEB /* GBYMineSettingViewController.m */; };
+		C1DFB167279A44C100144EEB /* GBYMineSettingThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB166279A44C100144EEB /* GBYMineSettingThemeViewController.m */; };
+		C1DFB16B279A46DD00144EEB /* GBYMineSettingThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB16A279A46DD00144EEB /* GBYMineSettingThemeTableViewCell.m */; };
+		C1DFB16E279A51AA00144EEB /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB16D279A51AA00144EEB /* UIImage+ColorImage.m */; };
+		C1DFB172279A92C400144EEB /* UserDefaultManage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DFB171279A92C400144EEB /* UserDefaultManage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1DFB11727992B1E00144EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1DFB0F327992B1A00144EEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1DFB0FA27992B1A00144EEB;
+			remoteInfo = StytemThemeDemo;
+		};
+		C1DFB12127992B1E00144EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1DFB0F327992B1A00144EEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1DFB0FA27992B1A00144EEB;
+			remoteInfo = StytemThemeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		118F41188572DA410D37A254 /* Pods-StytemThemeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StytemThemeDemo.debug.xcconfig"; path = "Target Support Files/Pods-StytemThemeDemo/Pods-StytemThemeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C10E3A94279F847000925B56 /* ThemeColorJson_day.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThemeColorJson_day.json; sourceTree = "<group>"; };
+		C10E3A96279F847C00925B56 /* ThemeColorJson_night.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThemeColorJson_night.json; sourceTree = "<group>"; };
+		C10E3A99279F87BB00925B56 /* ThemeColorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeColorManager.h; sourceTree = "<group>"; };
+		C10E3A9A279F87BB00925B56 /* ThemeColorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeColorManager.m; sourceTree = "<group>"; };
+		C10E3A9D279F964F00925B56 /* ThemeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeHelper.h; sourceTree = "<group>"; };
+		C10E3A9E279F966E00925B56 /* ThemeConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeConfigModel.h; sourceTree = "<group>"; };
+		C10E3A9F279F966E00925B56 /* ThemeConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeConfigModel.m; sourceTree = "<group>"; };
+		C10E3AA1279F9A9E00925B56 /* UIColor+ThemeColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ThemeColor.h"; sourceTree = "<group>"; };
+		C10E3AA2279F9A9E00925B56 /* UIColor+ThemeColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ThemeColor.m"; sourceTree = "<group>"; };
+		C1DFB0FB27992B1A00144EEB /* StytemThemeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StytemThemeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DFB0FE27992B1A00144EEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1DFB0FF27992B1A00144EEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1DFB10A27992B1E00144EEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1DFB10D27992B1E00144EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1DFB10F27992B1E00144EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DFB11027992B1E00144EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1DFB11627992B1E00144EEB /* StytemThemeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StytemThemeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DFB11A27992B1E00144EEB /* StytemThemeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StytemThemeDemoTests.m; sourceTree = "<group>"; };
+		C1DFB12027992B1E00144EEB /* StytemThemeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StytemThemeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DFB12427992B1E00144EEB /* StytemThemeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StytemThemeDemoUITests.m; sourceTree = "<group>"; };
+		C1DFB12627992B1E00144EEB /* StytemThemeDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StytemThemeDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		C1DFB13927992C9A00144EEB /* GBYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYBaseViewController.h; sourceTree = "<group>"; };
+		C1DFB13A27992C9A00144EEB /* GBYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYBaseViewController.m; sourceTree = "<group>"; };
+		C1DFB13C27992CA800144EEB /* GBYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYTabBarController.h; sourceTree = "<group>"; };
+		C1DFB13D27992CA900144EEB /* GBYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYTabBarController.m; sourceTree = "<group>"; };
+		C1DFB13F27992CB600144EEB /* GBYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYNavigationController.h; sourceTree = "<group>"; };
+		C1DFB14027992CB600144EEB /* GBYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYNavigationController.m; sourceTree = "<group>"; };
+		C1DFB14627992D0E00144EEB /* GBYHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYHomeViewController.h; sourceTree = "<group>"; };
+		C1DFB14727992D0E00144EEB /* GBYHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYHomeViewController.m; sourceTree = "<group>"; };
+		C1DFB14A27992D2200144EEB /* GBYMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYMineViewController.h; sourceTree = "<group>"; };
+		C1DFB14B27992D2200144EEB /* GBYMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYMineViewController.m; sourceTree = "<group>"; };
+		C1DFB14D279930D900144EEB /* GBYHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYHeader.h; sourceTree = "<group>"; };
+		C1DFB14E279930E900144EEB /* GBYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYPrefixHeader.pch; sourceTree = "<group>"; };
+		C1DFB14F2799316A00144EEB /* UIColor+Dark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Dark.h"; sourceTree = "<group>"; };
+		C1DFB1502799316A00144EEB /* UIColor+Dark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Dark.m"; sourceTree = "<group>"; };
+		C1DFB1542799350000144EEB /* GBYNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYNavigationView.h; sourceTree = "<group>"; };
+		C1DFB1552799350000144EEB /* GBYNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYNavigationView.m; sourceTree = "<group>"; };
+		C1DFB159279935FA00144EEB /* GBYTouchPointButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYTouchPointButton.h; sourceTree = "<group>"; };
+		C1DFB15A279935FA00144EEB /* GBYTouchPointButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYTouchPointButton.m; sourceTree = "<group>"; };
+		C1DFB15C279A40BB00144EEB /* GBYHomeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYHomeDetailViewController.h; sourceTree = "<group>"; };
+		C1DFB15D279A40BB00144EEB /* GBYHomeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYHomeDetailViewController.m; sourceTree = "<group>"; };
+		C1DFB162279A40E700144EEB /* GBYMineSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYMineSettingViewController.h; sourceTree = "<group>"; };
+		C1DFB163279A40E700144EEB /* GBYMineSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYMineSettingViewController.m; sourceTree = "<group>"; };
+		C1DFB165279A44C100144EEB /* GBYMineSettingThemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYMineSettingThemeViewController.h; sourceTree = "<group>"; };
+		C1DFB166279A44C100144EEB /* GBYMineSettingThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYMineSettingThemeViewController.m; sourceTree = "<group>"; };
+		C1DFB169279A46DD00144EEB /* GBYMineSettingThemeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBYMineSettingThemeTableViewCell.h; sourceTree = "<group>"; };
+		C1DFB16A279A46DD00144EEB /* GBYMineSettingThemeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBYMineSettingThemeTableViewCell.m; sourceTree = "<group>"; };
+		C1DFB16C279A51A900144EEB /* UIImage+ColorImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorImage.h"; sourceTree = "<group>"; };
+		C1DFB16D279A51AA00144EEB /* UIImage+ColorImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
+		C1DFB170279A92C400144EEB /* UserDefaultManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultManage.h; sourceTree = "<group>"; };
+		C1DFB171279A92C400144EEB /* UserDefaultManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManage.m; sourceTree = "<group>"; };
+		C919E5B8D956AF7C3B970DDF /* Pods-StytemThemeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StytemThemeDemo.release.xcconfig"; path = "Target Support Files/Pods-StytemThemeDemo/Pods-StytemThemeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D710DCEA96A847FE21360BE7 /* libPods-StytemThemeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StytemThemeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1DFB0F827992B1A00144EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED1CD9EDDAE06D69873AB27 /* libPods-StytemThemeDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DFB11327992B1E00144EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DFB11D27992B1E00144EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26E96E4ED208534F37FB8B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D710DCEA96A847FE21360BE7 /* libPods-StytemThemeDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66EF8EEBF5EB1F740F17A6E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				118F41188572DA410D37A254 /* Pods-StytemThemeDemo.debug.xcconfig */,
+				C919E5B8D956AF7C3B970DDF /* Pods-StytemThemeDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C10E3A8B279F83E700925B56 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C10E3A94279F847000925B56 /* ThemeColorJson_day.json */,
+				C10E3A96279F847C00925B56 /* ThemeColorJson_night.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C10E3A98279F879F00925B56 /* ThemeControl */ = {
+			isa = PBXGroup;
+			children = (
+				C10E3A99279F87BB00925B56 /* ThemeColorManager.h */,
+				C10E3A9A279F87BB00925B56 /* ThemeColorManager.m */,
+				C10E3A9E279F966E00925B56 /* ThemeConfigModel.h */,
+				C10E3A9F279F966E00925B56 /* ThemeConfigModel.m */,
+				C10E3AA1279F9A9E00925B56 /* UIColor+ThemeColor.h */,
+				C10E3AA2279F9A9E00925B56 /* UIColor+ThemeColor.m */,
+				C10E3A9D279F964F00925B56 /* ThemeHelper.h */,
+			);
+			path = ThemeControl;
+			sourceTree = "<group>";
+		};
+		C1DFB0F227992B1900144EEB = {
+			isa = PBXGroup;
+			children = (
+				C1DFB0FD27992B1A00144EEB /* StytemThemeDemo */,
+				C1DFB11927992B1E00144EEB /* StytemThemeDemoTests */,
+				C1DFB12327992B1E00144EEB /* StytemThemeDemoUITests */,
+				C1DFB0FC27992B1A00144EEB /* Products */,
+				66EF8EEBF5EB1F740F17A6E3 /* Pods */,
+				26E96E4ED208534F37FB8B23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1DFB0FC27992B1A00144EEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB0FB27992B1A00144EEB /* StytemThemeDemo.app */,
+				C1DFB11627992B1E00144EEB /* StytemThemeDemoTests.xctest */,
+				C1DFB12027992B1E00144EEB /* StytemThemeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1DFB0FD27992B1A00144EEB /* StytemThemeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C10E3A8B279F83E700925B56 /* Resource */,
+				C1DFB157279935AA00144EEB /* Manager */,
+				C1DFB13727992B8F00144EEB /* Macro */,
+				C1DFB13627992B8E00144EEB /* Category */,
+				C1DFB13527992B8C00144EEB /* Main */,
+				C1DFB13427992B8B00144EEB /* BaseRoot */,
+				C1DFB13327992B8A00144EEB /* App */,
+			);
+			path = StytemThemeDemo;
+			sourceTree = "<group>";
+		};
+		C1DFB11927992B1E00144EEB /* StytemThemeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB11A27992B1E00144EEB /* StytemThemeDemoTests.m */,
+			);
+			path = StytemThemeDemoTests;
+			sourceTree = "<group>";
+		};
+		C1DFB12327992B1E00144EEB /* StytemThemeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB12427992B1E00144EEB /* StytemThemeDemoUITests.m */,
+				C1DFB12627992B1E00144EEB /* StytemThemeDemoUITestsLaunchTests.m */,
+			);
+			path = StytemThemeDemoUITests;
+			sourceTree = "<group>";
+		};
+		C1DFB13327992B8A00144EEB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB0FE27992B1A00144EEB /* AppDelegate.h */,
+				C1DFB0FF27992B1A00144EEB /* AppDelegate.m */,
+				C1DFB10A27992B1E00144EEB /* Assets.xcassets */,
+				C1DFB10C27992B1E00144EEB /* LaunchScreen.storyboard */,
+				C1DFB10F27992B1E00144EEB /* Info.plist */,
+				C1DFB11027992B1E00144EEB /* main.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C1DFB13427992B8B00144EEB /* BaseRoot */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB152279934D900144EEB /* View */,
+				C1DFB153279934E200144EEB /* Controller */,
+			);
+			path = BaseRoot;
+			sourceTree = "<group>";
+		};
+		C1DFB13527992B8C00144EEB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB14427992CD400144EEB /* Home */,
+				C1DFB14227992CC600144EEB /* Mine */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C1DFB13627992B8E00144EEB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB14F2799316A00144EEB /* UIColor+Dark.h */,
+				C1DFB1502799316A00144EEB /* UIColor+Dark.m */,
+				C1DFB16C279A51A900144EEB /* UIImage+ColorImage.h */,
+				C1DFB16D279A51AA00144EEB /* UIImage+ColorImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C1DFB13727992B8F00144EEB /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB14D279930D900144EEB /* GBYHeader.h */,
+				C1DFB14E279930E900144EEB /* GBYPrefixHeader.pch */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		C1DFB13827992B9700144EEB /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		C1DFB14227992CC600144EEB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB168279A46BF00144EEB /* Cell */,
+				C1DFB14927992D1600144EEB /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C1DFB14427992CD400144EEB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB14527992CFD00144EEB /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1DFB14527992CFD00144EEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB14627992D0E00144EEB /* GBYHomeViewController.h */,
+				C1DFB14727992D0E00144EEB /* GBYHomeViewController.m */,
+				C1DFB15C279A40BB00144EEB /* GBYHomeDetailViewController.h */,
+				C1DFB15D279A40BB00144EEB /* GBYHomeDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1DFB14927992D1600144EEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB14A27992D2200144EEB /* GBYMineViewController.h */,
+				C1DFB14B27992D2200144EEB /* GBYMineViewController.m */,
+				C1DFB162279A40E700144EEB /* GBYMineSettingViewController.h */,
+				C1DFB163279A40E700144EEB /* GBYMineSettingViewController.m */,
+				C1DFB165279A44C100144EEB /* GBYMineSettingThemeViewController.h */,
+				C1DFB166279A44C100144EEB /* GBYMineSettingThemeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1DFB152279934D900144EEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB1542799350000144EEB /* GBYNavigationView.h */,
+				C1DFB1552799350000144EEB /* GBYNavigationView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1DFB153279934E200144EEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB13927992C9A00144EEB /* GBYBaseViewController.h */,
+				C1DFB13A27992C9A00144EEB /* GBYBaseViewController.m */,
+				C1DFB13C27992CA800144EEB /* GBYTabBarController.h */,
+				C1DFB13D27992CA900144EEB /* GBYTabBarController.m */,
+				C1DFB13F27992CB600144EEB /* GBYNavigationController.h */,
+				C1DFB14027992CB600144EEB /* GBYNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1DFB157279935AA00144EEB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C10E3A98279F879F00925B56 /* ThemeControl */,
+				C1DFB16F279A903300144EEB /* UserDefault */,
+				C1DFB158279935DC00144EEB /* Inheritance */,
+				C1DFB13827992B9700144EEB /* Const */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C1DFB158279935DC00144EEB /* Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB159279935FA00144EEB /* GBYTouchPointButton.h */,
+				C1DFB15A279935FA00144EEB /* GBYTouchPointButton.m */,
+			);
+			path = Inheritance;
+			sourceTree = "<group>";
+		};
+		C1DFB168279A46BF00144EEB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB169279A46DD00144EEB /* GBYMineSettingThemeTableViewCell.h */,
+				C1DFB16A279A46DD00144EEB /* GBYMineSettingThemeTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C1DFB16F279A903300144EEB /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFB170279A92C400144EEB /* UserDefaultManage.h */,
+				C1DFB171279A92C400144EEB /* UserDefaultManage.m */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1DFB0FA27992B1A00144EEB /* StytemThemeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DFB12A27992B1E00144EEB /* Build configuration list for PBXNativeTarget "StytemThemeDemo" */;
+			buildPhases = (
+				E6042E1C4986A5D98DA48AC6 /* [CP] Check Pods Manifest.lock */,
+				C1DFB0F727992B1A00144EEB /* Sources */,
+				C1DFB0F827992B1A00144EEB /* Frameworks */,
+				C1DFB0F927992B1A00144EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StytemThemeDemo;
+			productName = StytemThemeDemo;
+			productReference = C1DFB0FB27992B1A00144EEB /* StytemThemeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1DFB11527992B1E00144EEB /* StytemThemeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DFB12D27992B1E00144EEB /* Build configuration list for PBXNativeTarget "StytemThemeDemoTests" */;
+			buildPhases = (
+				C1DFB11227992B1E00144EEB /* Sources */,
+				C1DFB11327992B1E00144EEB /* Frameworks */,
+				C1DFB11427992B1E00144EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1DFB11827992B1E00144EEB /* PBXTargetDependency */,
+			);
+			name = StytemThemeDemoTests;
+			productName = StytemThemeDemoTests;
+			productReference = C1DFB11627992B1E00144EEB /* StytemThemeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1DFB11F27992B1E00144EEB /* StytemThemeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DFB13027992B1E00144EEB /* Build configuration list for PBXNativeTarget "StytemThemeDemoUITests" */;
+			buildPhases = (
+				C1DFB11C27992B1E00144EEB /* Sources */,
+				C1DFB11D27992B1E00144EEB /* Frameworks */,
+				C1DFB11E27992B1E00144EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1DFB12227992B1E00144EEB /* PBXTargetDependency */,
+			);
+			name = StytemThemeDemoUITests;
+			productName = StytemThemeDemoUITests;
+			productReference = C1DFB12027992B1E00144EEB /* StytemThemeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1DFB0F327992B1A00144EEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C1DFB0FA27992B1A00144EEB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C1DFB11527992B1E00144EEB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C1DFB0FA27992B1A00144EEB;
+					};
+					C1DFB11F27992B1E00144EEB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C1DFB0FA27992B1A00144EEB;
+					};
+				};
+			};
+			buildConfigurationList = C1DFB0F627992B1A00144EEB /* Build configuration list for PBXProject "StytemThemeDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1DFB0F227992B1900144EEB;
+			productRefGroup = C1DFB0FC27992B1A00144EEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1DFB0FA27992B1A00144EEB /* StytemThemeDemo */,
+				C1DFB11527992B1E00144EEB /* StytemThemeDemoTests */,
+				C1DFB11F27992B1E00144EEB /* StytemThemeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1DFB0F927992B1A00144EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DFB10E27992B1E00144EEB /* LaunchScreen.storyboard in Resources */,
+				C10E3A95279F847000925B56 /* ThemeColorJson_day.json in Resources */,
+				C10E3A97279F847C00925B56 /* ThemeColorJson_night.json in Resources */,
+				C1DFB10B27992B1E00144EEB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DFB11427992B1E00144EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DFB11E27992B1E00144EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6042E1C4986A5D98DA48AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StytemThemeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1DFB0F727992B1A00144EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DFB16E279A51AA00144EEB /* UIImage+ColorImage.m in Sources */,
+				C10E3AA0279F966E00925B56 /* ThemeConfigModel.m in Sources */,
+				C1DFB10027992B1A00144EEB /* AppDelegate.m in Sources */,
+				C10E3AA3279F9A9E00925B56 /* UIColor+ThemeColor.m in Sources */,
+				C1DFB164279A40E700144EEB /* GBYMineSettingViewController.m in Sources */,
+				C1DFB167279A44C100144EEB /* GBYMineSettingThemeViewController.m in Sources */,
+				C1DFB13B27992C9A00144EEB /* GBYBaseViewController.m in Sources */,
+				C1DFB13E27992CA900144EEB /* GBYTabBarController.m in Sources */,
+				C10E3A9B279F87BB00925B56 /* ThemeColorManager.m in Sources */,
+				C1DFB15B279935FA00144EEB /* GBYTouchPointButton.m in Sources */,
+				C1DFB16B279A46DD00144EEB /* GBYMineSettingThemeTableViewCell.m in Sources */,
+				C1DFB1512799316A00144EEB /* UIColor+Dark.m in Sources */,
+				C1DFB1562799350000144EEB /* GBYNavigationView.m in Sources */,
+				C1DFB14127992CB600144EEB /* GBYNavigationController.m in Sources */,
+				C1DFB172279A92C400144EEB /* UserDefaultManage.m in Sources */,
+				C1DFB14C27992D2200144EEB /* GBYMineViewController.m in Sources */,
+				C1DFB14827992D0E00144EEB /* GBYHomeViewController.m in Sources */,
+				C1DFB11127992B1E00144EEB /* main.m in Sources */,
+				C1DFB15E279A40BB00144EEB /* GBYHomeDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DFB11227992B1E00144EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DFB11B27992B1E00144EEB /* StytemThemeDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DFB11C27992B1E00144EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DFB12527992B1E00144EEB /* StytemThemeDemoUITests.m in Sources */,
+				C1DFB12727992B1E00144EEB /* StytemThemeDemoUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1DFB11827992B1E00144EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1DFB0FA27992B1A00144EEB /* StytemThemeDemo */;
+			targetProxy = C1DFB11727992B1E00144EEB /* PBXContainerItemProxy */;
+		};
+		C1DFB12227992B1E00144EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1DFB0FA27992B1A00144EEB /* StytemThemeDemo */;
+			targetProxy = C1DFB12127992B1E00144EEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1DFB10C27992B1E00144EEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1DFB10D27992B1E00144EEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1DFB12827992B1E00144EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C1DFB12927992B1E00144EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1DFB12B27992B1E00144EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118F41188572DA410D37A254 /* Pods-StytemThemeDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StytemThemeDemo/Macro/GBYPrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/StytemThemeDemo/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "主题";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.StytemThemeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1DFB12C27992B1E00144EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C919E5B8D956AF7C3B970DDF /* Pods-StytemThemeDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StytemThemeDemo/Macro/GBYPrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/StytemThemeDemo/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "主题";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.StytemThemeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1DFB12E27992B1E00144EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.StytemThemeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StytemThemeDemo.app/StytemThemeDemo";
+			};
+			name = Debug;
+		};
+		C1DFB12F27992B1E00144EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.StytemThemeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StytemThemeDemo.app/StytemThemeDemo";
+			};
+			name = Release;
+		};
+		C1DFB13127992B1E00144EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.StytemThemeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StytemThemeDemo;
+			};
+			name = Debug;
+		};
+		C1DFB13227992B1E00144EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.StytemThemeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StytemThemeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1DFB0F627992B1A00144EEB /* Build configuration list for PBXProject "StytemThemeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DFB12827992B1E00144EEB /* Debug */,
+				C1DFB12927992B1E00144EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DFB12A27992B1E00144EEB /* Build configuration list for PBXNativeTarget "StytemThemeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DFB12B27992B1E00144EEB /* Debug */,
+				C1DFB12C27992B1E00144EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DFB12D27992B1E00144EEB /* Build configuration list for PBXNativeTarget "StytemThemeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DFB12E27992B1E00144EEB /* Debug */,
+				C1DFB12F27992B1E00144EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DFB13027992B1E00144EEB /* Build configuration list for PBXNativeTarget "StytemThemeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DFB13127992B1E00144EEB /* Debug */,
+				C1DFB13227992B1E00144EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1DFB0F327992B1A00144EEB /* Project object */;
+}
