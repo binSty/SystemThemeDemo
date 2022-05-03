@@ -732,7 +732,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W38K4WS4VN;
+				DEVELOPMENT_TEAM = QKG3ZU5CZE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/StytemThemeDemo/Macro/GBYPrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/StytemThemeDemo/App/Info.plist";
@@ -747,9 +747,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ydph.channelprod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydph.ifps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = channelprodDis;
+				PROVISIONING_PROFILE_SPECIFIER = phmobileprofiles;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -764,7 +764,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W38K4WS4VN;
+				DEVELOPMENT_TEAM = QKG3ZU5CZE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/StytemThemeDemo/Macro/GBYPrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/StytemThemeDemo/App/Info.plist";
@@ -779,9 +779,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ydph.channelprod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydph.ifps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = channelprodDis;
+				PROVISIONING_PROFILE_SPECIFIER = phmobileprofiles;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
